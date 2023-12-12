@@ -1,0 +1,49 @@
+<body>
+    <main>
+        <link rel="stylesheet" href="./asset/bootstrap-5.3.2/css/bootstrap.min.css">
+       
+            <!-- card show comments  -->
+            <!-- <div class="comment">
+                <div class="card" style="width: 60%;">
+                    <div class="card-body">
+                      <h5 class="card-title">Post by: <span class="ms-2 me-3">$row["sender"]</span> <span>$row["date"]</span></h5>
+                      <p class="card-text">content</p>
+                      
+                    </div>
+                  </div>
+            </div> -->
+            <!-- card comment reply  -->
+            <div class="reply mt-2" style="width: 60%;">
+                <div class="card float-end" style="width: 90%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Post by: <span class="ms-2 me-3">$row["sender"]</span> <span>$row["date"]</span></h5>
+                        <p class="card-text">content</p>
+                    </div>
+                  </div>
+            </div>
+            
+
+            <!-- form reply deprecate -->
+            <!-- <div class="mt-2 button-reply d-flex" style="width: 60%;">
+                <input type="text" class="form-control" placeholder="Enter reply comment...">
+                <a href="#" class="btn btn-primary float-end ms-2">Reply</a>
+            </div> -->
+    
+            <!-- form reply comment -->
+            <form method='POST' id='replyForm' action='' >
+                <div class='mt-2 mb-4' style='width: 60%;'>
+                    <div class='form-group mb-2'>
+                        <input value='' type='text' name='parentId' id='parentId' class='form-control' hidden='true' />
+                    </div>
+                    <div class='d-flex'>
+                        <input type='text' class='form-control' placeholder='Enter reply comment...' required>
+                        <button id='idReply' class='idReply btn btn-primary float-end ms-2'>Reply</button>
+                    </div>
+                </div>
+            </form>
+    
+            <script src="./asset/bootstrap-5.3.2/js/bootstrap.min.js"></script>
+    
+    
+    </main>
+</body>
